@@ -9,13 +9,19 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	size_t	i;
 	size_t	len_src;
 	size_t	len_dst;
-
-	len_dst = ft_strlen(dst);
+	
 	len_src = ft_strlen(src);
-	i = -1;
+	i = 0;
+
+	if (dst == NULL && dstsize == 0)
+		return(len_src);
+	len_dst = ft_strlen(dst);
 	if (dstsize < len_dst)
 		return (dstsize + len_src);
-	while ((*src != '\0') && ++i < dstsize - len_dst)
-		*(dst++ + len_dst) = *src++;
+	while ((*src != '\0') && i < dstsize - len_dst - 1)
+		{
+			*(dst++ + len_dst) = *src++;
+			i++;
+		}
 	return (*(dst + len_dst) = '\0', len_dst + len_src);
 }
