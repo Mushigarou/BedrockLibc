@@ -5,7 +5,7 @@ CFLAGS = -Werror -Wextra -Wall
 SRC = ft_isalnum.c ft_isascii.c ft_isprint.c ft_strlcpy.c \
 		ft_isalpha.c ft_isdigit.c ft_strlcat.c ft_strlen.c \
 		main.c ft_strncmp.c ft_toupper.c ft_tolower.c ft_strnstr.c \
-		ft_strchr.c
+		ft_strchr.c ft_strrchr.c
 
 HEADER = libft.h
 
