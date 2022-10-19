@@ -19,8 +19,8 @@ $(NAME) :$(OBJECTS)
 #	$(CC) $(CFLAGS) -c $(SRC)
 	ar r $(NAME) $(OBJECTS)
 
-%.o:%.c $(HEADER)
-	$(CC) $(CFLAGS) -c $< -o $@
+#%.o:%.c $(HEADER)
+#	$(CC) $(CFLAGS) -c $< -o $@
 
 clean :
 	$(RM) $(OBJECTS)

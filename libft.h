@@ -11,7 +11,7 @@ int	ft_isprint(int c);
 int ft_toupper(int  c);
 int ft_tolower (int c);
 size_t  ft_strlen(const char *s);
-char    *strchr(const char *s, int c);
+char    *ft_strchr(const char *s, int c);
 char    *ft_strnstr(const char *haystack, const char *needle, size_t len);
 size_t  ft_strlcpy(char *dst, const char *src, size_t dstsize);
 size_t  ft_strlcat(char *dst, const char *src, size_t dstsize);
