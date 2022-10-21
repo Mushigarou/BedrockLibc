@@ -3,9 +3,6 @@
 
 char    *ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
-    // char    *substr;
-    // char    *str;
-
     size_t  hs;
     size_t  nl;
 
@@ -13,12 +10,10 @@ char    *ft_strnstr(const char *haystack, const char *needle, size_t len)
     
     char    *need = (char *)(needle);
 
-    // str = (char *)(haystack);
     if (*need == '\0')
         return (hay);
     if (len == 0)
         return (NULL);
-    // substr = (char *)(needle);
     hs = 0;
     while ((haystack != '\0') && (hs < len))
     {
