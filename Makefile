@@ -18,7 +18,7 @@ all: $(NAME)
 
 $(NAME) :$(OBJECTS)
 #	$(CC) $(CFLAGS) -c $(SRC)
-	ar r $(NAME) $(OBJECTS)
+	ar r $(NAME) $(OBJECTS) $@ $?
 
 #%.o:%.c $(HEADER)
 #	$(CC) $(CFLAGS) -c $< -o $@
