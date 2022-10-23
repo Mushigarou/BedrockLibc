@@ -7,7 +7,6 @@
 *If space is insufficient, allocation fails and returns a NULL pointer
 */
 #include "libft.h"
-#include <stdlib.h>
 
 void    *ft_calloc(size_t count, size_t size)
 {
