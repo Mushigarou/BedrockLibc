@@ -13,7 +13,6 @@ char *ft_strtrim(char const *s1, char const *set)
         return (char *)s1;
     while (*s1 && ft_strchr(set, *s1))
         s1++;
-
     beg = (char *)s1;
     len = ft_strlen(s1);
     s1 += len - NULL_CHAR;
