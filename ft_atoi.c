@@ -21,10 +21,10 @@ int ft_atoi(const char *str)
     sign = 1;
     hold = 0;
     
-    if (ft_strlen(str) >= 19 && str[0] == '-')
-         return (0);
-    if (ft_strlen(str) >= 20)
-         return (-1);
+    // if (ft_strlen(str) >= 19 && str[0] == '-')
+    //      return (0);
+    // if (ft_strlen(str) >= 20)
+    //      return (-1);
     while (*str == ' ' || (*str >= 9 && *str<= 13))
 	    str++;
     if (*str == '-')

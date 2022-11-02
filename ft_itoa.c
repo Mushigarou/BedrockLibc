@@ -1,7 +1,6 @@
 #include "libft.h"
 #define TRUE 1;
 #define FALSE 0;
-#include <stdio.h> 
 /*Counting number of digits*/
 int count_n (int n)
 {
@@ -74,10 +73,10 @@ char *ft_itoa(int n)
 	return (str);
 }
 
-int main ()
-{
-	int n = -214745;
-	char *str = ft_itoa(n);
-	printf("\ncount words : %d\n", count_n(n));
-	printf("str : %s\n", str);
-}
+// int main ()
+// {
+// 	int n = -214745;
+// 	char *str = ft_itoa(n);
+// 	printf("\ncount words : %d\n", count_n(n));
+// 	printf("str : %s\n", str);
+// }

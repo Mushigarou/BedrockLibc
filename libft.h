@@ -6,6 +6,7 @@
 #define NULL_CHAR    1
 
 char *ft_itoa(int n);
+char *ft_itoa(int n);
 int	ft_isalnum(int c);
 int ft_isalpha(int c);
 int	ft_isascii(int c);
