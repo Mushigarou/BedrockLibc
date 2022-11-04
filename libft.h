@@ -5,6 +5,11 @@
 #define LIBFT_H
 #define NULL_CHAR    1
 
+typedef struct s_list
+{
+    void *content;
+    struct s_list *next;
+} t_list;
 char *ft_itoa(int n);
 char *ft_itoa(int n);
 int	ft_isalnum(int c);
@@ -16,6 +21,7 @@ int ft_toupper(int  c);
 int ft_tolower (int c);
 int ft_atoi(const char *str);
 void ft_bzero(void *s, size_t n);
+t_list *ft_lstnew(void *content);
 size_t  ft_strlen(const char *s);
 void	ft_putnbr_fd(int n, int fd);
 char    *ft_strdup(const char *s1);
@@ -27,6 +33,7 @@ char    *ft_strchr(const char *s, int c);
 char    *ft_strrchr(const char *s, int c);
 void    *ft_calloc(size_t count, size_t size);
 void    *ft_memset(void *b, int c, size_t len);
+void ft_lstadd_front(t_list **lst, t_list *new);
 char *ft_strjoin(char const *s1, char const *s2);
 char *ft_strtrim(char const *s1, char const *set);
 void    *ft_memchr(const void *s, int c, size_t n);

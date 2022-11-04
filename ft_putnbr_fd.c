@@ -16,7 +16,7 @@ void	ft_putnbr_fd(int n, int fd)
 		ft_putchar('-', fd);
 		n *= -1;
 	}	
-	if (n >= 0 && n <= 9)
+	if (ft_isdigit(n + '0'))
 		ft_putchar(n + 48, fd);
 	if (n > 9)
 	{	
