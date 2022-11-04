@@ -20,7 +20,7 @@ int ft_atoi(const char *str)
 
     sign = 1;
     hold = 0;
-    
+
     // if (ft_strlen(str) >= 19 && str[0] == '-')
     //      return (0);
     // if (ft_strlen(str) >= 20)
