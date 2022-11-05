@@ -21,6 +21,7 @@ int ft_toupper(int  c);
 int ft_tolower (int c);
 int ft_lstsize(t_list *lst);
 int ft_atoi(const char *str);
+t_list *ft_lstlast(t_list *lst);
 void ft_bzero(void *s, size_t n);
 t_list *ft_lstnew(void *content);
 size_t  ft_strlen(const char *s);
