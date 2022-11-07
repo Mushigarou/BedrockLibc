@@ -8,7 +8,7 @@ as a parameter and free the node. The memory of
 void ft_lstdelone(t_list *lst, void (*del)(void*))
 {
     if (!lst)
-        exit(0);
+        return ;
     del(lst->content);
     free(lst);
 }
