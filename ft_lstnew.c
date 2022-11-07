@@ -9,8 +9,8 @@ t_list *ft_lstnew(void *content)
 	node = (t_list *)malloc(sizeof(struct s_list));
 	if (!node)
 		return NULL;
-	if (!node)
-		return (node->content = NULL, node);
+	// if (!node)
+	// 	return (node->content = NULL, node);
 	node->content = content;
 	node->next = NULL;
 	return (node);
