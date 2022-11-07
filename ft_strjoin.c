@@ -4,24 +4,24 @@
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
-	char *newStr;
-	size_t len_s1;
-	size_t len_s2;
+	char	*new_str;
+	size_t	len_s1;
+	size_t	len_s2;
 
 	if (!s1)
 		return (ft_strdup(s2));
 	len_s1 = ft_strlen(s1);
 	len_s2 = ft_strlen(s2);
-	newStr = (char *)malloc(len_s1 + len_s2 + NULL_CHAR);
-	if (newStr == NULL)
-		return (newStr);
+	new_str = (char *)malloc(len_s1 + len_s2 + NULL_CHAR);
+	if (new_str == NULL)
+		return (new_str);
 	len_s1 = 0;
 	len_s2 = 0;
 	while (s1[len_s1])
-		newStr[len_s2++] = s1[len_s1++];
+		new_str[len_s2++] = s1[len_s1++];
 	len_s1 = 0;
 	while (s2[len_s1])
-		newStr[len_s2++] = s2[len_s1++];
-	newStr[len_s2] = '\0';
-	return (newStr);
+		new_str[len_s2++] = s2[len_s1++];
+	new_str[len_s2] = '\0';
+	return (new_str);
 }

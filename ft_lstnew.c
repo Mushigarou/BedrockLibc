@@ -2,15 +2,13 @@
 #include "libft.h"
 
 // Allocates (with malloc(3)) and returns a new node.
-t_list *ft_lstnew(void *content)
+t_list	*ft_lstnew(void *content)
 {
-	t_list *node;
+	t_list	*node;
 
 	node = (t_list *)malloc(sizeof(struct s_list));
 	if (!node)
-		return NULL;
-	// if (!node)
-	// 	return (node->content = NULL, node);
+		return (NULL);
 	node->content = content;
 	node->next = NULL;
 	return (node);
@@ -47,13 +45,11 @@ t_list *ft_lstnew(void *content)
 // 	adress.next = &city;
 // 	city.next = &name;
 // 	start.next = &adress;
-	
 // 	start.content = "Hey sir :";
 // 	adress.content = "1337";
 // 	name.content = "123";
 // 	age.content = "hey";
 // 	city.content = "Aga";
-	
 // 	ft_lstnew(head);
 // 	display_list(head);
 // }
