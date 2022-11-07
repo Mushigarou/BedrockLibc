@@ -4,10 +4,10 @@ and free(3). Finally, the pointer to the list must be set to NULL. */
 
 #include "libft.h"
 
-void    ft_lstclear(t_list **lst, void (*del)(void*))
+void	ft_lstclear(t_list **lst, void (*del)(void*))
 {
-	t_list *tmp;
-	t_list *tmp2;
+	t_list	*tmp;
+	t_list	*tmp2;
 
 	if (!lst)
 		return ;

@@ -5,17 +5,18 @@ as a parameter and free the node. The memory of
 
 #include "libft.h"
 
-void ft_lstdelone(t_list *lst, void (*del)(void*))
+void	ft_lstdelone(t_list *lst, void (*del)(void*))
 {
-    if (!lst)
-        return ;
-    del(lst->content);
-    free(lst);
+	if (!lst || !del)
+		return ;
+	del(lst->content);
+	free(lst);
 }
 
 // void del (void *tab)
 // {
-//     free(tab);
+// 	tab = (int )tab;
+//     tab = 5;
 // }
 
 // int main ()
@@ -24,6 +25,6 @@ void ft_lstdelone(t_list *lst, void (*del)(void*))
 //     void *p;
 //     n1 = NULL;
 //     n1 = ft_lstnew(ft_strdup("test test"));
-//     p = del; 
-//     ft_lstdelone(n1, p);
+//     // p = del; 
+//     ft_lstdelone(n1, NULL);
 // }
