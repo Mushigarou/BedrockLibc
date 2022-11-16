@@ -1,9 +1,15 @@
 #ifndef LIBFT_H
-
 # define LIBFT_H
-# define  NULL_CHAR 1
+
 # include <stddef.h>
 # include <stdlib.h>
+# include <limits.h>
+# include <stdio.h>
+# include <string.h>
+
+# ifndef NULL_CHAR
+#  define  NULL_CHAR 1
+# endif // #define NULL_CHAR
 
 typedef struct s_list
 {
@@ -55,4 +61,4 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 
-#endif
+#endif // #define LIBFT_H
