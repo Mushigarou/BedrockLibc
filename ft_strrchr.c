@@ -2,6 +2,7 @@
 //else, start from the end, and find c (converted to char) in s
 
 /*Converted to char so, ("test", 't' + 256) pass.*/
+
 #include "libft.h"
 
 char	*ft_strrchr(const char *s, int c)

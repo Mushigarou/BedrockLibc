@@ -35,7 +35,7 @@ RE= '\033[0;34m'
 all : $(NAME)
 	
 $(NAME) : $(OBJ_DIR) $(OBJECTS)
-	printf ${RE}"Linking is done ✅\n"${NC}
+	printf ${RE}"Linking mandatory part is done ✅\n"${NC}
 	 ar rcs $(NAME) $(OBJECTS)
 
 $(OBJ_DIR)/%.o : %.c $(HEADER)
@@ -43,10 +43,10 @@ $(OBJ_DIR)/%.o : %.c $(HEADER)
 	@ $(CC) $(CFLAGS) -c $< -o $@
 
 $(OBJ_DIR) :
-	mkdir obj
+	@ mkdir obj
 
 bonus : $(OBJ_B_DIR) $(OBJECTS_B) 
-	printf ${RE}"Linking is done ✅\n"${NC}
+	printf ${RE}"Linking bonus part is done ✅\n"${NC}
 	ar rc $(NAME) $(OBJECTS_B)
 
 $(OBJ_B_DIR)/%.o : %.c $(HEADER)
@@ -54,7 +54,7 @@ $(OBJ_B_DIR)/%.o : %.c $(HEADER)
 	@ $(CC) $(CFLAGS) -c $< -o $@
 
 $(OBJ_B_DIR) :
-	mkdir obj_B
+	@ mkdir obj_B
 
 clean :
 	$(RM) $(OBJ_DIR) $(OBJ_B_DIR)

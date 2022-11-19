@@ -7,6 +7,7 @@
 # include <stdio.h>
 # include <string.h>
 # include <ctype.h>
+# include <unistd.h>
 
 # ifndef NULL_CHAR
 #  define  NULL_CHAR 1

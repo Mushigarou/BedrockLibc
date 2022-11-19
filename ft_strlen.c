@@ -1,5 +1,5 @@
 #include "libft.h"
-#include <stddef.h>
+
 //Returns len of the string given
 
 size_t	ft_strlen(const char *s)
