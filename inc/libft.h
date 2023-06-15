@@ -1,15 +1,9 @@
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include <stddef.h>
 # include <stdlib.h>
 # include <limits.h>
-# include <stdio.h>
-# include <string.h>
-# include <ctype.h>
 # include <unistd.h>
-# include <fcntl.h>
-# include <sys/file.h>
 
 # ifndef NULL_CHAR
 #  define  NULL_CHAR 1
