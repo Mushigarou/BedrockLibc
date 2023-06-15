@@ -1,12 +1,12 @@
-# Libft
+# BedrockLibc
 
 This project is about coding a C library.
 It contains a lot of general purpose functions my future programs will rely upon.
 
 ## Usage:
 ```
-$> git clone https://github.com/Mushigarou/Libft.git
-$> cd Libft
+$> git clone https://github.com/Mushigarou/BedrockLibc.git
+$> cd BedrockLibc
 $> make
 ```
 Now you have a static library `libft.a` which you can link with other programs.

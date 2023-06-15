@@ -5,7 +5,7 @@
 SRC =	conversion_functions/ft_atoi.c	\
 		conversion_functions/ft_itoa.c	\
 		dynamic_allocation/ft_calloc.c	\
-		memory_functions/ft_bzero.c	\
+		memory_functions/ft_bzero.c		\
 		memory_functions/ft_memchr.c	\
 		memory_functions/ft_memcmp.c	\
 		memory_functions/ft_memcpy.c	\
@@ -81,22 +81,12 @@ NC ='\033[0m'
 all : $(NAME)
 
 $(NAME) : $(OBJS)
-# printf ${Green}"😂 libft.a is ready to be linked 😂\n"${NC}
-	ar rcs $(NAME) $(OBJS)
-
-
-# bj/%.o : %.c $(HEADERS)
-# 	$(eval FILES_COMPILED = $(shell echo "$(FILES_COMPILED) + 1" | bc ))
-# 	@ printf ${HBLK}"  Compiling ▻"${HBLK}" [%-20s] "${HBLK} $(notdir $@)
-# 	@ echo "$(FILES_COMPILED) * 100 / $(TOTAL_FILES)" | bc | tr -d '\n'
-# 	@ printf "%% \r"${NC}
-# 	@ mkdir -p $(dir $@)
-# 	@ $(CC) $(CFLAGS) -c $< -o $@
+	@ printf ${Green}"😂 libft.a is ready to be linked 😂\n"${NC}
+	@ ar rcs $(NAME) $(OBJS)
 
 obj/%.o : %.c $(HEADER)
-	 mkdir -p $(dir $@)
-	 $(CC) $(CFLAGS) $(INC_HEADER) -c $< -o $@
-#  printf "♠ Compiling ▻ "${Blue}$(notdir $@)"\r"${NC}
+	@ mkdir -p $(dir $@)
+	@ $(CC) $(CFLAGS) $(INC_HEADER) -c $< -o $@
 
 #----------------------------------------------------------------------------------------------
 # Deleting object files
